@@ -8,6 +8,24 @@
 
 
 <style>
+
+
+    .kotak {
+        width: 25px;
+        height: 25px;
+        margin: 10px auto;
+    }
+
+    .merah {
+
+        background-color: red;
+
+    }
+
+    .hijau {
+        background-color: green;
+    }
+
     .biru-doang {
         background-color: blue;
     }
@@ -21,6 +39,16 @@
     <h1>Bermain Dengan Warna</h1>
 
     <button type="button" id="tUbahWarna">Ubah Warna</button>
+    <br><br>
+
+    <div class="kotak merah"></div>
+    <input type="range" name="sMerah" min="0" max="255">
+
+    <div class="kotak hijau"></div>
+    <input type="range" name="sHijau" min="0" max="255">
+
+    <div class="kotak biru-doang"></div>
+    <input type="range" name="sBiru" min="0" max="255">
 
 
 <script src="script.js"></script>    
