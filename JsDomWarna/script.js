@@ -69,3 +69,9 @@ sBiru.addEventListener("input", function(){
 
 // Cursor Pengubah warna
 
+document.body.addEventListener("mousemove", function(){
+    const xPos = Math.round((event.clientX / window.innerWidth) * 255);
+    const yPos = Math.round((event.clientY / window.innerWidth) * 255);
+
+    document.body.style.backgroundColor = 'rgb('+xPos+','+yPos+',100)';
+});
